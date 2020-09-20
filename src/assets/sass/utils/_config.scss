@@ -1,0 +1,56 @@
+// Colors
+$c-primary: #262626;
+$c-secondary: #E9EFF2;
+$c-accent: #D9B5A0;
+
+// изображения
+$i-home: url("../img/background.jpg");
+$i-home-show: true;
+$i-background-opacity: 0.9;
+
+// Sizes
+//! в html { font-size: $base-font-size} будет равен 1 rem
+$base-font-size: 16px;
+$content-size: 950px;
+
+// брекпойнты bootstrap
+// $bp-desktop:      1248px;
+// $bp-tablet-wide:  1024px;
+// $bp-tablet:       767px;
+// $bp-phone:        560px;
+
+// брекпойнты
+$bp-desktop: 1248px;
+$bp-desktop-wide: 1440px;
+$bp-tablet-wide: 1024px;
+$bp-tablet: 768px;
+$bp-tablet-small: 640px;
+$bp-phablet: 560px;
+$bp-phone-wide: 480px;
+$bp-phone: 400px;
+
+// Custom Properties
+:root {
+  --ff-primary: "Source Sans Pro", sans-serif;
+  --ff-secondary: "Source Code Pro", monospace;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --fs-base: 16px;
+  --fs-h1: 2.5rem;
+  --fs-h2: 2rem;
+  --fs-h3: 1.125rem;
+  --fs-body: 1rem;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+        0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+
+  //! Не средний              min-width: 800px
+  @include mediaOverMd {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+  }
+}

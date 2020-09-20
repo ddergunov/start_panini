@@ -1,0 +1,109 @@
+audio,
+canvas,
+iframe,
+img,
+svg,
+video,
+textarea {
+  vertical-align: middle;
+}
+
+textarea {
+  resize: none;
+}
+
+section {
+  position: relative;
+}
+
+input,
+select,
+button {
+  outline: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: $content-size;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+  font-family: "Helvetica";
+  font-weight: 300;
+  line-height: 2;
+  text-align: center;
+  display: block;
+  position: relative;
+
+  &::before {
+    content: "Сожалеем :(";
+    display: block;
+  }
+
+  &::after {
+    content: "(url: " attr(src) ")";
+    display: block;
+    font-size: 12px;
+  }
+}
+
+// устранение смешения якоря при неподвижном меню
+.free_space {
+  border-top: 50px solid transparent;
+  margin-top: -50px;
+  background-clip: padding-box;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  &.visually-hidden {
+    @include invisible;
+  }
+}
+
+.visually-hidden {
+  &:not(:focus) {
+    &:not(:active) {
+      @include invisible;
+    }
+  }
+}
+
+.xs-hidden {
+  @media screen and (max-width: $bp-phone-wide) {
+    display: none !important;
+  }
+}
+
+.xs-visible {
+  display: none !important;
+
+  @media screen and (max-width: $bp-phone-wide) {
+    display: block !important;
+  }
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-12"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,102 @@
+---
+# - <common name>:
+#   name: Given Surname
+#   job: JOB
+#   skills:
+#   - LANG
+
+contacts:
+    author:           Дмитрий Дергунов
+    email:            admin@dergunov.info
+
+sections:
+    intro:   # описание в index.html и каждом portfolio-item.html
+        nav-item:
+            text:              Домой
+            link:              '#home'
+            page:              'index'
+    about:
+        title:                 Обо мне
+        subtitle:              пенсионер-верстальшик
+        nav-item:
+            text:              Обо мне
+            link:              '#about'
+            page:              'index'
+        text: |
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nihil sapiente quaerat unde totam est maiores sint et molestiae quisquam a aliquam nam aspernatur voluptatem nesciunt porro, minus aperiam reprehenderit.
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nihil sapiente quaerat unde totam est maiores sint et molestiae quisquam a aliquam nam aspernatur voluptatem nesciunt porro, minus aperiam reprehenderit.
+
+    services:
+        title: Что я могу
+        subtitle:
+        nav-item:
+            text:              Что я могу
+            link:              '#services'
+            page:              'index'
+        service:
+            -
+                title: Верстать
+                text:
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            -
+                title: Есть
+                text:
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            -
+                title: Спать
+                text:
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+    work:
+        title: Мои работы
+        subtitle: небольшая часть лучших работ
+        nav-item:
+            text:              Мои работы
+            link:             '#work'
+            page:             'index'
+        projects:
+            portfolio-01:
+                image:         portfolio-01.jpg
+                title:         Заголовок
+                title-strong:  отличного проекта
+                subtitle:      подзаголовок
+                link:          "portfolio-item1.html"
+                projects-link: "#"
+                github-link:   "#"
+
+            portfolio-02:
+                image:         portfolio-02.jpg
+                title:         Заголовок
+                title-strong:  отличного проекта
+                subtitle:      подзаголовок
+                link:          "portfolio-item2.html"
+                projects-link: "#"
+                github-link:   "#"
+
+            portfolio-03:
+                image:         portfolio-03.jpg
+                title:         Заголовок
+                title-strong:  отличного проекта
+                subtitle:      подзаголовок
+                link:          "portfolio-item3.html"
+                projects-link: "#"
+                github-link:   "#"
+
+            portfolio-04:
+                image:         portfolio-04.jpg
+                title:         Заголовок
+                title-strong:  отличного проекта
+                subtitle:      подзаголовок
+                link:          "portfolio-item4.html"
+                projects-link: "#"
+                github-link:   "#"
+
+            portfolio-05:
+                image:         portfolio-04.jpg
+                title:         Заголовок
+                title-strong:  отличного проекта
+                subtitle:      подзаголовок
+                link:          "portfolio-item4.html"
+                projects-link: "#"
+                github-link:   "#"

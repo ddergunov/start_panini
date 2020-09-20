@@ -1,0 +1,34 @@
+//* Widescreens                 min-width: 1171px
+@include mediaXl {
+
+}
+
+//* Desktops and laptops        (min-width: 769px) and (max-width: 1170px)
+@include mediaLg {
+
+}
+
+//* Tablets and small laptops   max-width: 768px
+@include mediaMd {
+
+}
+
+//* Smartphones                 max-width: 500px
+@include mediaSm {
+
+}
+
+//* Small phones               max-width: 401px
+@include mediaSx {
+
+}
+
+//! Over Small                min-width: 600px
+@include mediaOverSm {
+
+}
+
+//! Over medium              min-width: 800px
+@include mediaOverMd {
+
+}

@@ -1,0 +1,105 @@
+
+@mixin size($a,$b: $a) {
+  width: $a;
+  height: $b;
+}
+
+@mixin btn-hover {
+  &:hover {
+    background-image: linear-gradient(to bottom, $c-accent-dk, $c-accent-lt);
+  }
+}
+
+@mixin invisible {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
+
+@mixin background {
+  @if $i-home-show {
+    &.bg-img {
+      background-image: $i-home;
+      background-size: cover;
+      background-attachment: fixed;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+
+        width: 100%;
+        height: 100%;
+
+        background: rgba($c-primary, $i-background-opacity);
+      }
+    }
+  }
+}
+
+// Установка цвета текста
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return $c-primary;
+  } @else {
+    @return $c-secondary;
+  }
+}
+
+// Медиазапросы
+
+@mixin mediaOverSm {
+  @media screen and (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin mediaOverMd {
+  @media screen and (min-width: 800px) {
+    @content;
+  }
+}
+
+@mixin mediaSx {
+  @media screen and (max-width: 401px) {
+    @content;
+  }
+}
+
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) {
+    @content;
+  }
+}
+

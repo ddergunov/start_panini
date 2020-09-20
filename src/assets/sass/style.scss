@@ -1,0 +1,120 @@
+@import "utils/mixins";
+@import "utils/libs";
+// @import "fonts";
+
+@import "utils/config";
+@import "utils/scaffolding";
+// @import "utils/animations";
+
+html {
+  font-size: var(--fs-base);
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  margin: 0;
+
+  background:$c-secondary;
+
+  // color: set-text-color($c-primary);
+  color: $c-primary;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+}
+
+strong {
+  font-weight: var(--fw-bold);
+}
+
+:focus {
+  outline: 3px solid $c-accent;
+  outline-offset: 3px;
+}
+
+/* Buttons */
+
+.btn {
+  display: inline-block;
+
+  padding: 0.5em 2.5em;
+
+  background: $c-accent;
+  cursor: pointer;
+
+  color: $c-primary;
+  text-decoration: none;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+  line-height: 1;
+
+  &.lg-heading {
+    font-size: 6rem;
+
+    //* Smartphones                 max-width: 500px
+    @include mediaSm {
+      line-height: 6rem;
+    }
+
+    //* Small phones               max-width: 401px
+    @include mediaSx {
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+  }
+
+  &.sm-heading {}
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}
+
+.text-secondary {
+  color: $c-accent;
+}
+
+// запрет скрола страницы
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.container {
+  // _scaffolding
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  //* Desktops and laptops        (min-width: 769px) and (max-width: 1170px)
+  @include mediaLg {
+    padding: 0 15px;
+  }
+}
+
+// модули
+@import "blocks/blocks";
