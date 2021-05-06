@@ -1,27 +1,26 @@
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener("DOMContentLoaded", () => {
     //= navToggle.js
     //// = hamburger.js
-
     ////= tiny-slider.js
 });
 
 //$(document).ready(function() {
-    /* slick-slider */
-    ////= slick-slider.js
+/* slick-slider */
+////= slick-slider.js
 
-    ////= tabs.js
+////= tabs.js
 
-    ////= toggleClass.js
+////= toggleClass.js
 
-    ////= validateForms.js
+////= validateForms.js
 
-    ////= modal.js
+////= modal.js
 
-    //// $("input[name=phone]").mask("+7 (999) 999-99-99");
+//// $("input[name=phone]").mask("+7 (999) 999-99-99");
 
-    ////= smoothScroll.js
+////= smoothScroll.js
 
-    ////= sendMail.js
+////= sendMail.js
 
-    //// new WOW().init();
+//// new WOW().init();
 //});
